@@ -92,10 +92,10 @@ function Header() {
             )}
             {authStatus && (
               <li>
-                <LogoutBtn />
                 <Link to="/notifications">
-                <Button bgColor='white'>🔔</Button>
+                <Button bgColor='white'>Notifications🔔</Button>
                 </Link>
+                <LogoutBtn />
               </li>
             )}
           </ul>
