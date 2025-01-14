@@ -183,7 +183,9 @@ function Header() {
                   </Link>
                 )
             )}
-            {authStatus && <LogoutBtn />}
+            {authStatus && <LogoutBtn /> && <Link to="/notifications">
+                <Button bgColor='white'>🔔</Button>
+                </Link>}
           </div>
         )}
       </Container>
