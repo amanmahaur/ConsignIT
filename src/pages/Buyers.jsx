@@ -10,6 +10,8 @@ function Buyers() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
   const [post, setPost] = useState(null);
+  
+   const userData = useSelector((state) => state.auth.userData);
 
   const { slug } = useParams();
   const navigate = useNavigate();
@@ -59,7 +61,7 @@ function Buyers() {
 
     try {
       const acceptNotifData = {
-        notification: "Congratulations! Buying request accepted.",
+        notification: "Congratulations! Buying request accepted."+userData.email,
         email: id,
         product_name: post?.title || "Unknown Product",
       };
