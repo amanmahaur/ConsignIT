@@ -63,7 +63,7 @@ function Buyers() {
 
     try {
       const acceptNotifData = {
-        notification: "Congratulations! Buying request accepted."+userData.email,
+        notification: `Congratulations! Buying request accepted. Contact on ${userData.email}`,
         email: id,
         product_name: post?.title || "Unknown Product",
       };
