@@ -92,10 +92,10 @@ function Header() {
             )}
             {authStatus && (
               <li>
-                <Link to="/notifications">
-                <Button bgColor='white'>Notifications🔔</Button>
-                </Link>
                 <LogoutBtn />
+                <Link to="/notifications">
+                <Button bgColor='white'>🔔</Button>
+                </Link>
               </li>
             )}
           </ul>
@@ -183,10 +183,10 @@ function Header() {
                   </Link>
                 )
             )}
-            {authStatus && <LogoutBtn />}
             {authStatus &&<Link to="/notifications">
-                <Button bgColor='white'>🔔</Button>
+                <Button bgColor='white'>Notifications🔔</Button>
                 </Link>}
+            {authStatus && <LogoutBtn />}
           </div>
         )}
       </Container>
