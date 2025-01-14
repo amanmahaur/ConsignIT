@@ -5,6 +5,8 @@ import { useNavigate } from "react-router-dom";
 import { useParams } from "react-router-dom";
 import parse from "html-react-parser";
 
+import { useSelector } from "react-redux";
+
 function Buyers() {
   const [buyers, setBuyers] = useState([]);
   const [loading, setLoading] = useState(true);
