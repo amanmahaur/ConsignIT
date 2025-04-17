@@ -6,7 +6,7 @@ function PostCard({ $id, title, featured_image1 }) {
     // Determine the image preview URL or use a fallback placeholder
     const imagePreview = featured_image1
         ? appwriteService.getFilePreview(featured_image1)
-        : "https://via.placeholder.com/300x200?text=No+Image";
+        : "https://placehold.co/600x400?text=No+Image";
 
     return (
         <Link to={`/post/${$id}`} className="block group">
@@ -17,7 +17,7 @@ function PostCard({ $id, title, featured_image1 }) {
                         alt={title || "Post Image"}
                         className="rounded-xl w-full h-48 object-cover sm:h-40"
                         onError={(e) => {
-                            e.target.src = "https://via.placeholder.com/300x200?text=No+Image"; // Fallback image
+                            e.target.src = "https://placehold.co/600x400?text=No+Image"; // Fallback image
                         }}
                     />
                 </div>
