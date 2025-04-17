@@ -273,15 +273,16 @@ export class Service{
         }
     }
     getFilePreview(fileId){
-        console.log(this.bucket.getFilePreview(
-            conf.appwriteBucketId,
-            fileId
-        ));
-        return this.bucket.getFilePreview(
-            conf.appwriteBucketId,
-            fileId
-        )
-    }
+    console.log(this.bucket.getFileView(
+        conf.appwriteBucketId,
+        fileId
+    ));
+    return this.bucket.getFileView(
+        conf.appwriteBucketId,
+        fileId
+    )
+}
+
 }
 
 
