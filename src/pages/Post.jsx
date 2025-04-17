@@ -108,7 +108,8 @@ export default function Post() {
              className="rounded-xl w-full h-64 object-cover shadow-md hover:shadow-lg transition-shadow duration-300 cursor-pointer"
              onClick={() => openImagePreview(appwriteService.getFilePreview(post.featured_image1))}
              onError={(e) => {
-               e.target.src = "https://via.placeholder.com/600x400?text=No+Image"; // Fallback for broken image links
+               e.target.src = "https://placehold.co/600x400?text=No+Image
+"; // Fallback for broken image links
              }}
            />
           )}
@@ -119,7 +120,8 @@ export default function Post() {
            className="rounded-xl w-full h-64 object-cover shadow-md hover:shadow-lg transition-shadow duration-300 cursor-pointer"
            onClick={() => openImagePreview(appwriteService.getFilePreview(post.featured_image2))}
            onError={(e) => {
-             e.target.src = "https://via.placeholder.com/600x400?text=No+Image"; // Fallback for broken image links
+             e.target.src = "https://placehold.co/600x400?text=No+Image
+"; // Fallback for broken image links
            }}
          />
           )}
